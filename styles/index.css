@@ -76,6 +76,8 @@ h2 {
     padding: 20px;
     margin: 30px;
     justify-content: center;
+    cursor: pointer;
+    transition: transform 0.2s;
 }
 
 .cards {
@@ -95,3 +97,35 @@ h2 {
     flex-direction:column;
 }
 
+.card:hover {
+    background-color: rgb(110, 236, 184);
+
+    transform: scale(1.1) rotate(-10deg);
+    box-shadow: rgb(26, 151, 93) ;
+}
+
+.background-ellipse {
+    background-color: rgb(216, 245, 229);
+    border-radius: 50%;
+    width: 1000px;
+    height: 1000px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.green-circle {
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
+
+    background-color: rgb(110, 236, 184);
+}
